@@ -24,9 +24,9 @@
 	$(".responsive-text").each(function(){
 		var windowWidth = $(window).width();
 		var fontSize = $(this).css("font-size");
-                var emFontSize = parseFloat($(this).css("font-size")) / bodyFontSize;
-		var lineHeight = parseFloat($(this).css("line-height")) / bodyFontSize - (emFontSize/1.2);
-		$(this).css({"font-size":emFontSize+"em"});
+                var remFontSize = parseFloat($(this).css("font-size")) / bodyFontSize;
+		var lineHeight = parseFloat($(this).css("line-height")) / bodyFontSize - (remFontSize/1.2);
+		$(this).css({"font-size":remFontSize+"rem"});
 	});
 
 	var firstWindowWidth = $(window).width();
